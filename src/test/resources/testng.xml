@@ -11,4 +11,16 @@
             <class name="com.prasandeep.api.tests.SanitySuiteTests"/>
         </classes>
     </test>
+    <test name="ReqRes API">
+        <classes>
+            <class name="com.prasandeep.api.tests.ReqResAuthTests"/>
+            <class name="com.prasandeep.api.tests.ReqResUserTests"/>
+        </classes>
+    </test>
+    <test name="WireMock">
+        <classes>
+            <class name="com.prasandeep.api.tests.wiremock.WireMockAuthTests"/>
+            <class name="com.prasandeep.api.tests.wiremock.WireMockRetryTests"/>
+        </classes>
+    </test>
 </suite>

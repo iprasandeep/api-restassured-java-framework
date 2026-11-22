@@ -4,6 +4,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.prasandeep.api.config.ConfigReader;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -26,6 +27,8 @@ public class TestListener implements ITestListener {
         extent.attachReporter(spark);
         extent.setSystemInfo("Framework", "RestAssured + TestNG");
         extent.setSystemInfo("Author", "prasandeep");
+        extent.setSystemInfo("Env", ConfigReader.activeEnv());
+        extent.setSystemInfo("Base URI", ConfigReader.get("base.uri"));
     }
 
     @Override
