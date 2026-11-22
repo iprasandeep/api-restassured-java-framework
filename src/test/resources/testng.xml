@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="API Full Suite" verbose="1">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+        <listener class-name="com.prasandeep.api.listeners.TestListener"/>
+    </listeners>
+    <test name="Posts API">
+        <classes>
+            <class name="com.prasandeep.api.tests.GetPostTests"/>
+            <class name="com.prasandeep.api.tests.MutatingPostTests"/>
+            <class name="com.prasandeep.api.tests.SanitySuiteTests"/>
+        </classes>
+    </test>
+</suite>

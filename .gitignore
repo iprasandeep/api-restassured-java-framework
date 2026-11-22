@@ -1,0 +1,16 @@
+target/
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
+reports/
+allure-results/
+allure-report/
+target/allure-results/
+target/allure-report/
+.allure/
+test-output/
+*.log
+.env
+src/test/resources/config.local.properties

@@ -1,0 +1,12 @@
+[
+  {
+    "userId": 1,
+    "title": "Automation post alpha",
+    "body": "Created by api-restassured-java-framework"
+  },
+  {
+    "userId": 2,
+    "title": "Automation post beta",
+    "body": "Data-driven create payload"
+  }
+]
